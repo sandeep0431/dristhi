@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #030817;
+    --bg-surface: #071226;
+    --card-bg: rgba(12, 25, 48, 0.72);
+    --border-color: rgba(255, 255, 255, 0.08);
+    --accent-blue: #4DA3FF;
+    --accent-bright: #7CC4FF;
+    --text-primary: #F5F8FF;
+    --text-muted: #8C9AB5;
+  }
+
+  body {
+    background-color: #030817;
+    color: #F5F8FF;
+    overflow-x: hidden;
+    background-image: 
+      radial-gradient(circle at 50% 0%, rgba(77, 163, 255, 0.12) 0%, transparent 60%),
+      radial-gradient(circle at 10% 40%, rgba(56, 189, 248, 0.05) 0%, transparent 40%),
+      radial-gradient(circle at 90% 80%, rgba(66, 214, 164, 0.04) 0%, transparent 50%);
+    background-attachment: fixed;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom technical scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #030817;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a2c4a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4DA3FF;
+}
+
+/* Glass card utility */
+.glass-panel {
+  background: rgba(12, 25, 48, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.shadow-glow-blue {
+  box-shadow: 0 0 35px -5px rgba(77, 163, 255, 0.25);
+}
+
+.shadow-glow-cyan {
+  box-shadow: 0 0 35px -5px rgba(56, 189, 248, 0.25);
+}
+
+.shadow-glow-danger {
+  box-shadow: 0 0 35px -5px rgba(255, 93, 103, 0.35);
+}
+
+.shadow-glow-warning {
+  box-shadow: 0 0 35px -5px rgba(245, 185, 66, 0.35);
+}
+
+/* Petroleum subtle geological line patterns */
+.seismic-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+.glow-text-blue {
+  text-shadow: 0 0 20px rgba(77, 163, 255, 0.5);
+}
+
+.glow-text-danger {
+  text-shadow: 0 0 20px rgba(255, 93, 103, 0.6);
+}
